@@ -7,10 +7,11 @@
   <title>Calculator</title>
   <script src="./JavaScripts/fontAwasome.js"></script>
   <link rel="stylesheet" href="./StyleSheet/output.css">
+  <script src="../preload.js"></script>
 </head>
 <body class="w-full h-screen bg-slate-300  flex justify-center items-center dark:text-white dark:bg-slate-950 text-black">
   <section class="flex w-[85%] h-[85%] flex-col items-center justify-evenly">
-    <input type="text" id="display" value="9876" disabled class="bg-amber-50 text-right h-28 w-full inset-shadow-sm dark:text-black dark:inset-shadow-fuchsia-700 inset-shadow-slate-500 rounded-2xl p-4 text-2xl cursor-text">
+    <input type="text" id="display" disabled class="bg-amber-50 text-right h-28 w-full inset-shadow-sm dark:text-black dark:inset-shadow-fuchsia-700 inset-shadow-slate-500 rounded-2xl p-4 text-2xl cursor-text " style="overflow-x: scroll;">
 
     <!-- Row 1 -->
     <div id="row1" class="flex justify-evenly w-full text-2xl">
@@ -63,6 +64,6 @@
     </div>
   </section>
 
-  <script src="./JavaScripts/script.js" ></script>
+  <script src="./JavaScripts/script.js"></script>
 </body>
 </html>

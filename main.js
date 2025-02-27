@@ -14,7 +14,7 @@ function createWindow() {
       enableRemoteModule: false,
       contextIsolation: true,
       hardwareAcceleration: false,
-      nodeIntegration: false
+      nodeIntegration: true
     }
   })
 
