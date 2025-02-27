@@ -4,7 +4,7 @@ Hey There This is Desktop Calculator Made with Electron.js.
 
 ## This Project use Technology.
 
-- *HTML* [For All Structure]
+- **HTML** [For All Structure]
 - *Tailwind* CSS [Tailwind CSS used for All Basics Styling]
 - *JS* [For All Logic]
 - *Electron.js* [For All Desktop Operating System]
