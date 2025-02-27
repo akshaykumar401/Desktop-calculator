@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <title>Calculator</title>
+  <script src="./JavaScripts/fontAwasome.js"></script>
+  <link rel="stylesheet" href="./StyleSheet/output.css">
+</head>
+<body class="w-full h-screen bg-slate-300  flex justify-center items-center dark:text-white dark:bg-slate-950 text-black">
+  <section class="flex w-[85%] h-[85%] flex-col items-center justify-evenly">
+    <input type="text" id="display" value="9876" disabled class="bg-amber-50 text-right h-28 w-full inset-shadow-sm dark:text-black dark:inset-shadow-fuchsia-700 inset-shadow-slate-500 rounded-2xl p-4 text-2xl cursor-text">
+
+    <!-- Row 1 -->
+    <div id="row1" class="flex justify-evenly w-full text-2xl">
+      <button id="root" class="button hover:scale-110 duration-150 active:scale-90 cursor-pointer inset-shadow-sm inset-shadow-indigo-500/50 w-12 h-12 rounded-full">√</button>
+      <button id="pi" class="button hover:scale-110 duration-150 active:scale-90 cursor-pointer inset-shadow-sm inset-shadow-indigo-500/50 w-12 h-12 rounded-full">π</button>
+      <button id="pow" class="button hover:scale-110 duration-150 active:scale-90 cursor-pointer inset-shadow-sm inset-shadow-indigo-500/50 w-12 h-12 rounded-full">˄</button>
+      <button id="fact" class="button hover:scale-110 duration-150 active:scale-90 cursor-pointer inset-shadow-sm inset-shadow-indigo-500/50 w-12 h-12 rounded-full">!</button>
+    </div>
+
+    <!-- Row 2 -->
+    <div id="row2" class="flex justify-evenly w-full text-2xl">
+      <button id="AC" class="button hover:scale-110 duration-150 active:scale-90 cursor-pointer inset-shadow-sm inset-shadow-indigo-500/50 w-12 h-12 rounded-full">AC</button>
+      <button id="bracket" class="button hover:scale-110 duration-150 active:scale-90 cursor-pointer inset-shadow-sm inset-shadow-indigo-500/50 w-12 h-12 rounded-full">()</button>
+      <button id="percentage" class="button hover:scale-110 duration-150 active:scale-90 cursor-pointer inset-shadow-sm inset-shadow-indigo-500/50 w-12 h-12 rounded-full">%</button>
+      <button id="divide" class="button hover:scale-110 duration-150 active:scale-90 cursor-pointer inset-shadow-sm inset-shadow-indigo-500/50 w-12 h-12 rounded-full">÷</button>
+    </div>
+
+    <!-- Row 3 -->
+    <div id="row3" class="flex justify-evenly w-full text-2xl">
+      <button id="7" class="button hover:scale-110 duration-150 active:scale-90 cursor-pointer inset-shadow-sm inset-shadow-indigo-500/50 w-12 h-12 rounded-full">7</button>
+      <button id="8" class="button hover:scale-110 duration-150 active:scale-90 cursor-pointer inset-shadow-sm inset-shadow-indigo-500/50 w-12 h-12 rounded-full">8</button>
+      <button id="9" class="button hover:scale-110 duration-150 active:scale-90 cursor-pointer inset-shadow-sm inset-shadow-indigo-500/50 w-12 h-12 rounded-full">9</button>
+      <button id="multiplication" class="button hover:scale-110 duration-150 active:scale-90 cursor-pointer inset-shadow-sm inset-shadow-indigo-500/50 w-12 h-12 rounded-full">X</button>
+    </div>
+
+    <!-- Row 4 -->
+    <div id="row4" class="flex justify-evenly w-full text-2xl">
+      <button id="4" class="button hover:scale-110 duration-150 active:scale-90 cursor-pointer inset-shadow-sm inset-shadow-indigo-500/50 w-12 h-12 rounded-full">4</button>
+      <button id="5" class="button hover:scale-110 duration-150 active:scale-90 cursor-pointer inset-shadow-sm inset-shadow-indigo-500/50 w-12 h-12 rounded-full">5</button>
+      <button id="6" class="button hover:scale-110 duration-150 active:scale-90 cursor-pointer inset-shadow-sm inset-shadow-indigo-500/50 w-12 h-12 rounded-full">6</button>
+      <button id="subtraction" class="button hover:scale-110 duration-150 active:scale-90 cursor-pointer inset-shadow-sm inset-shadow-indigo-500/50 w-12 h-12 rounded-full">-</button>
+    </div>
+
+    <!-- Row 5 -->
+    <div id="row5" class="flex justify-evenly w-full text-2xl">
+      <button id="1" class="button hover:scale-110 duration-150 active:scale-90 cursor-pointer inset-shadow-sm inset-shadow-indigo-500/50 w-12 h-12 rounded-full">1</button>
+      <button id="2" class="button hover:scale-110 duration-150 active:scale-90 cursor-pointer inset-shadow-sm inset-shadow-indigo-500/50 w-12 h-12 rounded-full">2</button>
+      <button id="3" class="button hover:scale-110 duration-150 active:scale-90 cursor-pointer inset-shadow-sm inset-shadow-indigo-500/50 w-12 h-12 rounded-full">3</button>
+      <button id="addition" class="button hover:scale-110 duration-150 active:scale-90 cursor-pointer inset-shadow-sm inset-shadow-indigo-500/50 w-12 h-12 rounded-full">+</button>
+    </div>
+
+    <!-- Row 6 -->
+    <div id="row6" class="flex justify-evenly w-full text-2xl">
+      <button id="0" class="button hover:scale-110 duration-150 active:scale-90 inset-shadow-sm inset-shadow-indigo-500/50 w-12 h-12 rounded-full cursor-pointer">0</button>
+      <button id="decimal" class="button hover:scale-110 duration-150 active:scale-90 inset-shadow-sm inset-shadow-indigo-500/50 w-12 h-12 rounded-full cursor-pointer">.</button>
+      <button id="back" class="button hover:scale-110 duration-150 active:scale-90 inset-shadow-sm inset-shadow-indigo-500/50 w-12 h-12 rounded-full cursor-pointer">
+        <i class="fa-solid fa-delete-left" class="inset-shadow-sm inset-shadow-indigo-500/50 w-12 h-12 rounded-full"></i>
+      </button>
+      <button id="equal" class="button hover:scale-110 duration-150 active:scale-90 inset-shadow-sm inset-shadow-indigo-500/50 w-12 h-12 rounded-full cursor-pointer">=</button>
+    </div>
+  </section>
+
+  <script src="./JavaScripts/script.js" ></script>
+</body>
+</html>

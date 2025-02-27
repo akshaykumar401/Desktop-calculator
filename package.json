@@ -1,0 +1,23 @@
+{
+  "name": "desktop_calculator",
+  "version": "1.0.0",
+  "description": "Desktop Calculator Application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Akshay Kumar",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^34.2.0"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.6",
+    "mathjs": "^14.2.1",
+    "tailwindcss": "^4.0.6"
+  }
+}
