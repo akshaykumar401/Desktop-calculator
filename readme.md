@@ -5,11 +5,11 @@ Hey There This is Desktop Calculator Made with Electron.js.
 ## This Project use Technology.
 
 - **HTML** [For All Structure]
-- *Tailwind* CSS [Tailwind CSS used for All Basics Styling]
-- *JS* [For All Logic]
-- *Electron.js* [For All Desktop Operating System]
-- *Node.js* [For All Node.js Functionality]
-- *mathjs* [For All Math Functionality]
+- **Tailwind** CSS [Tailwind CSS used for All Basics Styling]
+- **JS** [For All Logic]
+- **Electron.js** [For All Desktop Operating System]
+- **Node.js** [For All Node.js Functionality]
+- **mathjs** [For All Math Functionality]
 
 ## If You want To Do Any Changes.
 
