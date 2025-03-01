@@ -18,3 +18,4 @@ Hey There This is Desktop Calculator Made with Electron.js.
 - Run Command `npm i`
 - After Installation is Done Then Check Using `npm run start`
 - And Now You Can Make Any Changes You Want.
+- To Build Project Run Command `npm run pack`
